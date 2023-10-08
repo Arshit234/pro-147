@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Room walls -->
+    <a-entity geometry="primitive: box; width: 0.1; height: 3; depth: 6"
+              position="-3 1.5 0" material="color: #4CC3D9"></a-entity>
+    <a-entity geometry="primitive: box; width: 0.1; height: 3; depth: 6"
+              position="3 1.5 0" material="color: #4CC3D9"></a-entity>
+    <a-entity geometry="primitive: box; width: 6.2; height: 3; depth: 0.1"
+              position="0 1.5 -3" material="color: #4CC3D9"></a-entity>
+    <a-entity geometry="primitive: box; width: 6.2; height: 3; depth: 0.1"
+              position="0 1.5 3" material="color: #4CC3D9"></a-entity>
+
+    <!-- Room floor -->
+    <a-entity geometry="primitive: plane; width: 6; height: 6"
+              rotation="-90 0 0" position="0 0 0" material="color: #7f8c8d"></a-entity>
+
+    <!-- Room ceiling -->
+    <a-entity geometry="primitive: plane; width: 6; height: 6"
+              rotation="90 0 0" position="0 3 0" material="color: #ecf0f1"></a-entity>
+
+    <!-- Furniture -->
+    <a-box position="-1
